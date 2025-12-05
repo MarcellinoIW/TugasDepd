@@ -163,11 +163,9 @@ class _InterPageState extends State<InterPage> {
 
                   const SizedBox(height: 24),
 
-                  // --- BAGIAN 3: DESTINATION (INTERNATIONAL) ---
                   const Text("Destination (International)", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16)),
                   const SizedBox(height: 8),
                   
-                  // Search Bar Negara
                   TextField(
                     controller: _destinationController,
                     decoration: InputDecoration(
@@ -192,7 +190,7 @@ class _InterPageState extends State<InterPage> {
                     },
                   ),
 
-                  // List Suggestion Negara (Muncul di bawah search bar)
+                  // List Suggestion Negara 
                   if (interViewModel.countryList.status == Status.completed && 
                       _selectDestination == null && 
                       _destinationController.text.isNotEmpty)
@@ -232,7 +230,6 @@ class _InterPageState extends State<InterPage> {
 
                   const SizedBox(height: 24),
 
-                  // --- BUTTON HITUNG ---
                   SizedBox(
                     width: double.infinity,
                     height: 50,

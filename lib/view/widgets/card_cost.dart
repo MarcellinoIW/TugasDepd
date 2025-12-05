@@ -43,6 +43,7 @@ class _CardCostState extends State<CardCost> {
       ),
       color: Colors.white,
       child: ListTile(
+        onTap: () => _showDetailPopup(context, cost),
         title: Text(
           style: TextStyle(
             color: Colors.blue[800],
